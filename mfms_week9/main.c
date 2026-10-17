@@ -32,33 +32,41 @@ int main() {
     // Menu repeats until the user chooses Exit
     do {
         displayMenu();
-        choice = readInt("Enter Choice: ");
+        printf("Enter Choice: ");
+        choice = readINT();
 
         switch (choice) {
             case 1:
                 // VAT
-                amount = readFloat("Enter Amount: ");
+                printf("Enter Amount: ");
+                amount = readFloat();
                 vatReport(amount);
                 break;
 
             case 2:
                 // Salary
-                basicSalary = readFloat("Enter Basic Salary: ");
-                housing = readFloat("Enter Housing Allowance: ");
-                transport = readFloat("Enter Transport Allowance: ");
+                printf("Enter Basic Salary: ");
+                basicSalary = readFloat();
+                printf("Enter Housing Allowance: ");
+                housing = readFloat();
+                printf("Enter Transport Allowance: ");
+                transport = readFloat();
                 salaryReport(basicSalary, housing, transport);
                 break;
 
             case 3:
                 // Budget
-                revenue = readFloat("Enter Revenue: ");
-                expenses = readFloat("Enter Expenses: ");
+                printf("Enter Revenue: ");
+                revenue = readFloat();
+                printf("Enter Expenses: ");
+                expenses = readFloat();
                 budgetReport(revenue, expenses);
                 break;
 
             case 4:
                 // Employee search
-                employeeID = readInt("Enter Employee ID: ");
+                printf("Enter Employee ID: ");
+                employeeID = readINT();
                 position = searchEmployee(employeeID, employeeIDs, size);
 
                 if (position != -1) {

@@ -15,20 +15,16 @@ void addSupplier(void) {
 
     // Supplier information
     printf("Enter Supplier Name: ");
-    fgets(supplierName, sizeof(supplierName), stdin);
-    removeNewline(supplierName);
+    readString(supplierName, sizeof(supplierName));
 
     printf("Enter Supplier Email: ");
-    fgets(supplierEmail, sizeof(supplierEmail), stdin);
-    removeNewline(supplierEmail);
+    readString(supplierEmail, sizeof(supplierEmail));
 
     printf("Enter Supplier Number: ");
-    fgets(supplierNumber, sizeof(supplierNumber), stdin);
-    removeNewline(supplierNumber);
+    readString(supplierNumber, sizeof(supplierNumber));
 
     printf("Enter Supplier Town: ");
-    fgets(supplierTown, sizeof(supplierTown), stdin);
-    removeNewline(supplierTown);
+    readString(supplierTown, sizeof(supplierTown));
 
     supplierAdded = 1;
     printf("Supplier added.\n");
@@ -58,8 +54,7 @@ void searchSupplier(void) {
         printf("No supplier added yet.\n");
     } else {
         printf("Enter Supplier Name To Search: ");
-        fgets(searchName, sizeof(searchName), stdin);
-        removeNewline(searchName);
+        readString(searchName, sizeof(searchName));
 
         if (strcmp(supplierName, searchName) == 0) {
             printf("Supplier found.\n");

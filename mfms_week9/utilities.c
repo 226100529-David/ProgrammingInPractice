@@ -7,30 +7,46 @@ void displayWelcome(void) {
     printf("Welcome to the Municipal Financial Management System\n");
 }
 
-// Displays a prompt and returns the whole number entered
-int readInt(char prompt[]) {
+// Returns the whole number entered
+int readINT(void) {
 
     // Declaring variables
-    int value = 0;
+    int num = 0;
 
-    printf("%s", prompt);
-    scanf("%d", &value);
+    scanf("%d", &num);
     clearInputBuffer();
 
-    return value;
+    return num;
 }
 
-// Displays a prompt and returns the decimal number entered
-float readFloat(char prompt[]) {
+// Returns the decimal number entered (double)
+double readDouble(void) {
 
     // Declaring variables
-    float value = 0;
+    double num = 0;
 
-    printf("%s", prompt);
-    scanf("%f", &value);
+    scanf("%lf", &num);
     clearInputBuffer();
 
-    return value;
+    return num;
+}
+
+// Returns the decimal number entered (float)
+float readFloat(void) {
+
+    // Declaring variables
+    float num = 0;
+
+    scanf("%f", &num);
+    clearInputBuffer();
+
+    return num;
+}
+
+// Reads the text entered and removes the Enter at the end
+void readString(char text[], int size) {
+    fgets(text, size, stdin);
+    removeNewline(text);
 }
 
 

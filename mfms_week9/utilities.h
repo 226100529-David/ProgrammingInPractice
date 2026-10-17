@@ -2,8 +2,10 @@
 #define UTILITIES_H
 
 void displayWelcome(void);
-int readInt(char prompt[]);
-float readFloat(char prompt[]);
+int readINT(void);
+double readDouble(void);
+float readFloat(void);
+void readString(char text[], int size);
 void clearInputBuffer(void);
 void removeNewline(char text[]);
 
