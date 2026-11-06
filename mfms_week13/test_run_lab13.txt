@@ -1,0 +1,48 @@
+$ gcc -std=c99 -Wall -Wextra -pedantic lab13.c -o lab13
+$ ./lab13
+Employee ID (0 to stop): 1001
+Name (one word): Maria
+Salary: 18500.50
+Employee ID (0 to stop): 1002
+Name (one word): Simon
+Salary: 17200
+Employee ID (0 to stop): 1003
+Name (one word): Anna
+Salary: 21000.75
+  (grown to 4 slots)
+Employee ID (0 to stop): 1004
+Name (one word): Peter
+Salary: 15800
+Employee ID (0 to stop): 1005
+Name (one word): Ndapewa
+Salary: 19250.40
+  (grown to 8 slots)
+Employee ID (0 to stop): 1006
+Name (one word): Johannes
+Salary: 16400
+Employee ID (0 to stop): 1007
+Name (one word): Selma
+Salary: 22100
+Employee ID (0 to stop): 1008
+Name (one word): Thomas
+Salary: 14900.90
+Employee ID (0 to stop): 1009
+Name (one word): Helena
+Salary: 20500
+  (grown to 16 slots)
+Employee ID (0 to stop): 1010
+Name (one word): Kandji
+Salary: 17750.25
+Employee ID (0 to stop): 0
+
+ID: 1001 | Name: Maria | Salary: N$18500.50
+ID: 1002 | Name: Simon | Salary: N$17200.00
+ID: 1003 | Name: Anna | Salary: N$21000.75
+ID: 1004 | Name: Peter | Salary: N$15800.00
+ID: 1005 | Name: Ndapewa | Salary: N$19250.40
+ID: 1006 | Name: Johannes | Salary: N$16400.00
+ID: 1007 | Name: Selma | Salary: N$22100.00
+ID: 1008 | Name: Thomas | Salary: N$14900.90
+ID: 1009 | Name: Helena | Salary: N$20500.00
+ID: 1010 | Name: Kandji | Salary: N$17750.25
+Employees: 10 | Capacity: 16
